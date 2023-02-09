@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -513,19 +513,88 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-green-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+@media (min-width: 100%) {
+  .container {
+    max-width: 100%;
+  }
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.max-h-\[30px\] {
+  max-height: 30px;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.border-0 {
+  border-width: 0px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(244 244 246 / var(--tw-border-opacity));
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(91 91 102 / var(--tw-text-opacity));
 }
 
 /* https://tailwindcss.com/docs/installation -> using postfix step 4 */
+
+* {
+  /*
+   TODO -> Choose a font and use it..
+   */
+  font-family: sans, sans-serif;
+}
+
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
+}
+
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(245 134 18 / var(--tw-text-opacity));
+}

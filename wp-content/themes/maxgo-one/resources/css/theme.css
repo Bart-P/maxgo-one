@@ -3,3 +3,10 @@
 @tailwind utilities;
 
 /* https://tailwindcss.com/docs/installation -> using postfix step 4 */
+
+* {
+   /*
+   TODO -> Choose a font and use it..
+   */
+    font-family: sans, sans-serif;
+}

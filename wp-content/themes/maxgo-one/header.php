@@ -10,4 +10,29 @@
     <?php wp_head() ?>
 </head>
 <body>
-	<h2 class="text-3xl">HEADER</h2>
+<div class="bg-white text-secondary py-5 text-xl border-b-2 border-light">
+    <nav class="container flex justify-between">
+        <a href="/maxgo">
+                 <?php
+                 if(has_custom_logo()):
+                    $custom_logo_id = get_theme_mod('custom_logo');
+                    $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+                 ?>
+                     <img src="<?php echo esc_url($logo[0]) ?>"
+                          alt="maxgo"
+                          class="max-h-[30px]">
+
+                <?php
+                 else:
+                     echo 'maxgo';
+                 endif;?>
+        </a>
+        <ul class="flex gap-6">
+            <li><a href="" class="hover:text-primary hover:border-b-2 border-0 border-b-2">Start</a></li>
+            <li><a href="" class="hover:text-primary hover:border-b-2">Über uns</a></li>
+            <li><a href="" class="hover:text-primary hover:border-b-2">Leistungenspan</a></li>
+            <li><a href="" class="hover:text-primary hover:border-b-2">Produkte</a></li>
+            <li><a href="" class="hover:text-primary hover:border-b-2">Kontakt</a></li>
+        </ul>
+    </nav>
+</div>

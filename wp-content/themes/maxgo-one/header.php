@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible"
           content="ie=edge">
     <title>maxgo</title>
+    <?php wp_head() ?>
 </head>
 <body>
-	<h2>HEADER</h2>
+	<h2 class="text-3xl">HEADER</h2>

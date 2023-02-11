@@ -10,8 +10,8 @@
     <?php wp_head() ?>
 </head>
 <body>
-<div class="bg-white text-secondary pt-4 pb-3 border-b-2 border-light">
-    <nav class="container flex justify-between">
+<div class="bg-white text-secondary pb-3 pt-5 border-b-2 border-light">
+    <nav class="container flex justify-between align-middle">
         <a href="/maxgo">
                  <?php
                  if(has_custom_logo()):
@@ -28,11 +28,11 @@
                  endif;?>
         </a>
         <ul class="flex gap-6">
-            <li><a href="" class="hover:text-primary hover:border-b-2 border-0 border-b-2 uppercase font-bold">Start</a></li>
-            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase font-bold">Über uns</a></li>
-            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase font-bold">Leistungen</a></li>
-            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase font-bold">Produkte</a></li>
-            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase font-bold">Kontakt</a></li>
+            <li><a href="" class="font-bold hover:text-primary hover:border-b-2 border-0 uppercase">Start</a></li>
+            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase">Über uns</a></li>
+            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase">Leistungen</a></li>
+            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase">Produkte</a></li>
+            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase">Kontakt</a></li>
         </ul>
     </nav>
 </div>

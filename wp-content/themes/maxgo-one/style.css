@@ -545,10 +545,6 @@ video {
   max-height: 30px;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .justify-between {
   justify-content: space-between;
 }
@@ -570,8 +566,9 @@ video {
   border-color: rgb(244 244 246 / var(--tw-border-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
+.border-t-light {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(244 244 246 / var(--tw-border-opacity));
 }
 
 .py-5 {
@@ -592,18 +589,12 @@ video {
   padding-top: 1rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .align-middle {
   vertical-align: middle;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -617,6 +608,11 @@ video {
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(91 91 102 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(245 134 18 / var(--tw-text-opacity));
 }
 
 /* https://tailwindcss.com/docs/installation -> using postfix step 4 */

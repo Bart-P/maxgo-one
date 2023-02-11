@@ -27,12 +27,17 @@
                      echo 'maxgo';
                  endif;?>
         </a>
-        <ul class="flex gap-6">
-            <li><a href="" class="font-bold hover:text-primary hover:border-b-2 border-0 uppercase">Start</a></li>
-            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase">Über uns</a></li>
-            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase">Leistungen</a></li>
-            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase">Produkte</a></li>
-            <li><a href="" class="hover:text-primary hover:border-b-2 uppercase">Kontakt</a></li>
-        </ul>
+        <?php
+        // need to still figure out how to access the current page to make the text bold.
+        wp_nav_menu(
+            array(
+                'theme_location' => 'top-navigation',
+                'menu_class' => 'flex gap-6',
+                'container' => 'ul',
+                'link_before' => '<span class="hover:text-primary hover:border-b-2 uppercase">',
+                'link_after' => '</span>'
+            )
+        );
+        ?>
     </nav>
 </div>

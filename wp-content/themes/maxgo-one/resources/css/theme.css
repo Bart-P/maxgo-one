@@ -5,8 +5,14 @@
 /* https://tailwindcss.com/docs/installation -> using postfix step 4 */
 
 * {
-   /*
-   TODO -> Choose a font and use it..
-   */
     font-family: sans, sans-serif;
+}
+
+/* Top Navigation Styles */
+#menu-top-navigation li .sub-menu {
+    @apply hidden;
+}
+
+#menu-top-navigation .menu-item-has-children:hover .sub-menu {
+    @apply flex flex-col gap-2 p-4 absolute bg-light shadow-2xl;
 }

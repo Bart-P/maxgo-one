@@ -579,11 +579,6 @@ video {
   background-color: rgb(9 30 5 / var(--tw-bg-opacity));
 }
 
-.bg-light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 244 246 / var(--tw-bg-opacity));
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -609,6 +604,11 @@ video {
   text-transform: uppercase;
 }
 
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(9 30 5 / var(--tw-text-opacity));
+}
+
 .text-light {
   --tw-text-opacity: 1;
   color: rgb(244 244 246 / var(--tw-text-opacity));
@@ -617,11 +617,6 @@ video {
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(91 91 102 / var(--tw-text-opacity));
-}
-
-.text-dark {
-  --tw-text-opacity: 1;
-  color: rgb(9 30 5 / var(--tw-text-opacity));
 }
 
 /* https://tailwindcss.com/docs/installation -> using postfix step 4 */

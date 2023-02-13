@@ -28,5 +28,7 @@ register_nav_menus(
 	array(
 		'top-navigation' => 'Top Menu Location',
 		'mobile-navigation' => 'Mobile Menu Location',
+		'legal-navigation' => 'Legal Menu Location',
+		'footer-navigation' => 'Footer Menu Location',
 	)
 );

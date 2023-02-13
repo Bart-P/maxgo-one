@@ -16,3 +16,11 @@
 #menu-top-navigation .menu-item-has-children:hover .sub-menu {
     @apply flex flex-col gap-2 p-4 absolute bg-light shadow-2xl;
 }
+
+#menu-top-navigation .current_page_item {
+    @apply font-bold;
+}
+
+#menu-top-navigation .current_page_item ul {
+    @apply font-normal;
+}

@@ -17,7 +17,7 @@
                         'theme_location' => 'footer-navigation',
                         'menu_class' => 'flex flex-col gap-2',
                         'container' => 'ul',
-                        'link_before' => '<span class="hover:text-primary hover:border-b-2">',
+                        'link_before' => '<span class="hover:text-primary">',
                         'link_after' => '</span>'
                     )
                 );
@@ -30,7 +30,7 @@
                         'theme_location' => 'legal-navigation',
                         'menu_class' => 'flex flex-col gap-2',
                         'container' => 'ul',
-                        'link_before' => '<span class="hover:text-primary hover:border-b-2">',
+                        'link_before' => '<span class="hover:text-primary">',
                         'link_after' => '</span>'
                     )
                 );

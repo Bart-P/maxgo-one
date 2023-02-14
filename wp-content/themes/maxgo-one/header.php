@@ -28,13 +28,12 @@
                  endif;?>
         </a>
         <?php
-        // need to still figure out how to access the current page to make the text bold.
         wp_nav_menu(
             array(
                 'theme_location' => 'top-navigation',
                 'menu_class' => 'flex gap-6',
                 'container' => 'ul',
-                'link_before' => '<span class="hover:text-primary hover:border-b-2 uppercase">',
+                'link_before' => '<span class="text-dark hover:text-primary hover:border-b-2 uppercase">',
                 'link_after' => '</span>'
             )
         );

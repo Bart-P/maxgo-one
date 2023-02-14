@@ -10,9 +10,9 @@
     <?php wp_head() ?>
 </head>
 <body>
-<div class="bg-white text-secondary pb-3 pt-5 border-b-2 border-light">
-    <nav class="container flex justify-between align-middle">
-        <a href="/maxgo">
+<div class="bg-white text-secondary p-5 border-b-2 border-light">
+    <nav class="container flex justify-between items-center">
+        <a href="/maxgo" class="mt-1">
                  <?php
                  if(has_custom_logo()):
                     $custom_logo_id = get_theme_mod('custom_logo');
@@ -27,16 +27,19 @@
                      echo 'maxgo';
                  endif;?>
         </a>
-        <?php
-        wp_nav_menu(
-            array(
-                'theme_location' => 'top-navigation',
-                'menu_class' => 'flex gap-6',
-                'container' => 'ul',
-                'link_before' => '<span class="text-dark hover:text-primary hover:border-b-2 uppercase">',
-                'link_after' => '</span>'
-            )
-        );
-        ?>
+        <div class="flex gap-6">
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'top-navigation',
+                    'menu_class' => 'flex gap-6',
+                    'container' => 'ul',
+                    'link_before' => '<span class="text-dark hover:text-primary hover:border-b-2 uppercase align-middle">',
+                    'link_after' => '</span>'
+                )
+            );
+            ?>
+            <a href="" class="py-2 px-3 bg-dark text-light font-bold uppercase my-auto">Online Shop</a>
+        </div>
     </nav>
 </div>

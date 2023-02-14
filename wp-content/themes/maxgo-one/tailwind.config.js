@@ -3,9 +3,10 @@ module.exports = {
   theme: {
     colors: {
       primary: '#F58612',
-      secondary: '#5B5B66',
+      secondary: '#54428E',
+      gray: '#5B5B66',
       light: '#F4F4F6',
-      dark: '#091E05',
+      dark: '#011638',
     },
     container: {
       center: true,

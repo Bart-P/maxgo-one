@@ -10,6 +10,22 @@
 	</div>
 
 </div>
+<div class="py-10">
+    <section class="container flex flex-col gap-8 my-10">
+        <h2 class="text-4xl text-dark uppercase font-bold">
+            Zuverlässige, schnelle und bedarfsorientierte montage ihrer Verlängerungskabel
+        </h2>
+
+        <p class="text-xl">
+            Wir führen an unserem Standort in Hattingen einen Lagerbestand unterschiedlicher Leitungen, wie z.B. H07RN-F und H07BQ-F.
+            Querschnitte von 3x1,5 mm² bis 5x25 mm² sind durchgängig verfügbar.
+        </p>
+        <p class="text-xl">
+            Durch eine direkte Zusammenarbeit mit Herstellern wie Mennekes oder PC Electric, bieten wir Ihnen eine vielfältige Auswahl an vorrätigen Steckverbindern und können jederzeit flexibel auf Ihren Bedarf reagieren.
+            Regelmäßige Abnahmen von Großmengen sichern unsere Einkaufspreise und sorgen für ein optimales Preis,- Leistungsverhältnis unserer Produkte.
+        </p>
+    </section>
+</div>
 
 
 <?php get_template_part('includes/section', 'content') ?>

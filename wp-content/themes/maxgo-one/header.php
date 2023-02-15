@@ -20,7 +20,7 @@
                  ?>
                      <img src="<?php echo esc_url($logo[0]) ?>"
                           alt="maxgo"
-                          class="max-h-[30px]">
+                          class="max-h-[35px]">
 
                 <?php
                  else:
@@ -34,12 +34,12 @@
                     'theme_location' => 'top-navigation',
                     'menu_class' => 'flex gap-6',
                     'container' => 'ul',
-                    'link_before' => '<span class="text-dark hover:text-primary hover:border-b-2 uppercase align-middle">',
+                    'link_before' => '<span class="text-dark hover:text-primary uppercase align-middle">',
                     'link_after' => '</span>'
                 )
             );
             ?>
-            <a href="" class="py-2 px-3 bg-dark text-light font-bold uppercase my-auto">Online Shop</a>
+            <a href="" class="py-2 px-3 bg-dark text-light font-bold uppercase my-auto shadow-md hover:text-primary">Online Shop</a>
         </div>
     </nav>
 </div>

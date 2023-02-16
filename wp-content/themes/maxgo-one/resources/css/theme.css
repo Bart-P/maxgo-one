@@ -37,13 +37,3 @@
     background-size: cover;
     background-position: center;
 }
-
-/* Front Page List Image*/
-
-.fp-image {
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    height: 100px;
-    width: auto;
-}

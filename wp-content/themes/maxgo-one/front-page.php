@@ -29,7 +29,7 @@
 
 
 <div class="py-10 bg-light w-[100vw]">
-    <section class="container flex gap-6">
+    <section class="container py-10 flex gap-6">
         <div class="basis-2/5 py-5 my-auto">
             <h3 class="text-3xl uppercase font-dark font-bold">SCHUTZKONTAKT</h3>
             <p class="py-5 text-xl">
@@ -42,20 +42,18 @@
         </div>
         
         <div class="container basis-3/5 overflow-hidden">
-            <img src="http://localhost/maxgo/wp-content/uploads/2023/02/ein-haufen-schukokabel.jpg"
+            <img src="http://localhost/maxgo/wp-content/uploads/2023/02/schuko-kabel.jpg"
                  class="object-cover object-center"
-                 style="height: 400px; width: auto"
                  alt="">
         </div>
     </section>
 </div>
 
 <div class="py-10 w-[100vw]">
-    <section class="container flex gap-6">
-        <div class="container basis-3/5 overflow-hidden shadow-md">
+    <section class="container py-10 flex gap-6">
+        <div class="basis-3/5 overflow-hidden shadow-md">
             <img src="http://localhost/maxgo/wp-content/uploads/2023/02/camping-grill-draussen.jpg"
                  class="object-cover object-center"
-                 style="height: 400px; width: auto"
                  alt="">
         </div>
 
@@ -71,6 +69,50 @@
         </div>
     </section>
 </div>
+
+
+
+<div class="py-10 bg-light w-[100vw]">
+    <section class="container py-10 flex gap-6">
+        <div class="basis-2/5 py-5 my-auto">
+            <h3 class="text-3xl uppercase font-dark font-bold">Solar</h3>
+            <p class="py-5 text-xl">
+                Ein toller Text über Solar.
+                Hier kommt noch irgendwas Schlaues hin,
+                ich weiß halt noch nicht genau was.
+            </p>
+            <button class="bg-dark text-light py-2 px-4 uppercase hover:text-primary hover:bg-secondary shadow-md">mehr</button>
+        </div>
+
+        <div class="basis-3/5 overflow-hidden">
+            <img src="http://localhost/maxgo/wp-content/uploads/2023/02/solar-panel.jpg"
+                 class="object-cover object-center"
+                 alt="">
+        </div>
+    </section>
+</div>
+
+
+    <div class="py-10 w-[100vw]">
+        <section class="container py-10 flex gap-6">
+            <div class="basis-3/5 overflow-hidden shadow-md">
+                <img src="http://localhost/maxgo/wp-content/uploads/2023/02/starkstrom-lebensgefahr.jpg"
+                     class="object-cover object-center"
+                     alt="">
+            </div>
+
+            <div class="basis-2/5 py-5 my-auto">
+                <h3 class="text-3xl uppercase font-dark font-bold">Starkstrom</h3>
+                <p class="py-5 text-xl">
+                    Langlebige und stabile Steckverbinder,
+                    Schnittfeste PUR-Leitung H07BQ-F,
+                    Große Auswahl an Stromverteilern,
+                    Lieferung direkt auf die Baustelle.
+                </p>
+                <button class="bg-dark text-light py-2 px-4 uppercase hover:text-primary hover:bg-secondary shadow-md">mehr</button>
+            </div>
+        </section>
+    </div>
 
 
 <?php get_template_part('includes/section', 'content') ?>

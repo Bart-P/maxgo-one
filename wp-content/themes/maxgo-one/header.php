@@ -10,7 +10,7 @@
     <?php wp_head() ?>
 </head>
 <body>
-<div class="bg-white text-secondary p-5 border-b-2 border-light">
+<div class="bg-white text-secondary p-5 shadow-md">
     <nav class="container flex justify-between items-center">
         <a href="/maxgo" class="mt-1">
                  <?php
@@ -39,7 +39,7 @@
                 )
             );
             ?>
-            <a href="" class="py-2 px-3 bg-dark text-light font-bold uppercase my-auto shadow-md hover:text-primary">Online Shop</a>
+            <a href="" class="py-2 px-3 bg-dark text-light font-bold uppercase my-auto shadow-md hover:text-primary hover:bg-secondary">Online Shop</a>
         </div>
     </nav>
 </div>

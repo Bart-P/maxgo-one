@@ -10,8 +10,8 @@
 	</div>
 
 </div>
-<div class="py-10">
-    <section class="container flex flex-col gap-8 my-10">
+<div class="container py-10">
+    <section class="flex flex-col gap-8 my-10">
         <h2 class="text-4xl text-dark uppercase font-bold">
             Zuverlässige, schnelle und bedarfsorientierte montage ihrer Verlängerungskabel
         </h2>
@@ -24,6 +24,39 @@
             Durch eine direkte Zusammenarbeit mit Herstellern wie Mennekes oder PC Electric, bieten wir Ihnen eine vielfältige Auswahl an vorrätigen Steckverbindern und können jederzeit flexibel auf Ihren Bedarf reagieren.
             Regelmäßige Abnahmen von Großmengen sichern unsere Einkaufspreise und sorgen für ein optimales Preis,- Leistungsverhältnis unserer Produkte.
         </p>
+    </section>
+</div>
+
+
+<div class="container py-10">
+    <div class="h-[50px] w-[50px] bg-dark"></div>
+    <section class="flex">
+        <div class="basis-1/2">
+            <h3>SCHUTZKONTAKT VERLÄNGERUNGEN</h3>
+            <ul>
+                <li>
+                    3-fach Mehrwegeverteiler
+                </li>
+                <li>
+                    IP44 Spritzwassergeschützt
+                </li>
+                <li>
+                    stabile Vollgummi Ausführung
+                </li>
+                <li>
+                    Schuko Ultra Pro Kupplung mit Spannungsanzeige
+                </li>
+            </ul>
+        </div>
+        
+
+        <!-- does not seem to work right... damn image.. -->
+        <div class="basis-1/2 overflow-hidden">
+            <img src="http://localhost/maxgo/wp-content/uploads/2023/02/ein-haufen-schukokabel.jpg"
+                 class="object-contain w-[600px]"
+                 style="height: 400px; width: auto"
+                 alt="">
+        </div>
     </section>
 </div>
 

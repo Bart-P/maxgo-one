@@ -28,34 +28,46 @@
 </div>
 
 
-<div class="container py-10">
-    <div class="h-[50px] w-[50px] bg-dark"></div>
-    <section class="flex">
-        <div class="basis-1/2">
-            <h3>SCHUTZKONTAKT VERLÄNGERUNGEN</h3>
-            <ul>
-                <li>
-                    3-fach Mehrwegeverteiler
-                </li>
-                <li>
-                    IP44 Spritzwassergeschützt
-                </li>
-                <li>
-                    stabile Vollgummi Ausführung
-                </li>
-                <li>
-                    Schuko Ultra Pro Kupplung mit Spannungsanzeige
-                </li>
-            </ul>
+<div class="py-10 bg-light w-[100vw]">
+    <section class="container flex gap-6">
+        <div class="basis-2/5 py-5 my-auto">
+            <h3 class="text-3xl uppercase font-dark font-bold">SCHUTZKONTAKT</h3>
+            <p class="py-5 text-xl">
+                3-fach Mehrwegeverteiler,
+                IP44 Spritzwassergeschützt,
+                stabile Vollgummi Ausführung,
+                Schuko Ultra Pro Kupplung mit Spannungsanzeige.
+            </p>
+            <button class="bg-dark text-light py-2 px-4 uppercase hover:text-primary hover:bg-secondary shadow-md">mehr</button>
         </div>
         
-
-        <!-- does not seem to work right... damn image.. -->
-        <div class="basis-1/2 overflow-hidden">
+        <div class="container basis-3/5 overflow-hidden">
             <img src="http://localhost/maxgo/wp-content/uploads/2023/02/ein-haufen-schukokabel.jpg"
-                 class="object-contain w-[600px]"
+                 class="object-cover object-center"
                  style="height: 400px; width: auto"
                  alt="">
+        </div>
+    </section>
+</div>
+
+<div class="py-10 w-[100vw]">
+    <section class="container flex gap-6">
+        <div class="container basis-3/5 overflow-hidden shadow-md">
+            <img src="http://localhost/maxgo/wp-content/uploads/2023/02/camping-grill-draussen.jpg"
+                 class="object-cover object-center"
+                 style="height: 400px; width: auto"
+                 alt="">
+        </div>
+
+        <div class="basis-2/5 py-5 my-auto">
+            <h3 class="text-3xl uppercase font-dark font-bold">Camping</h3>
+            <p class="py-5 text-xl">
+                Verlängerungen nach DIN VDE 0100 Teil 708,
+                2,- und 3-Wege Verteiler erhältlich,
+                Adapterkabel von CEE auf Schutzkontakt,
+                Kostenlose Beratung
+            </p>
+            <button class="bg-dark text-light py-2 px-4 uppercase hover:text-primary hover:bg-secondary shadow-md">mehr</button>
         </div>
     </section>
 </div>

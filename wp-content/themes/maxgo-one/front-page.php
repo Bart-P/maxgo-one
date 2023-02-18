@@ -12,21 +12,31 @@
 </div>
 <div class="container py-10">
     <section class="flex flex-col gap-8 my-10">
-        <h2 class="text-4xl text-dark uppercase font-bold">
-            Zuverlässige, schnelle und bedarfsorientierte montage ihrer Verlängerungskabel
-        </h2>
-
-        <p class="text-xl">
-            Wir führen an unserem Standort in Hattingen einen Lagerbestand unterschiedlicher Leitungen, wie z.B. H07RN-F und H07BQ-F.
-            Querschnitte von 3x1,5 mm² bis 5x25 mm² sind durchgängig verfügbar.
-        </p>
-        <p class="text-xl">
-            Durch eine direkte Zusammenarbeit mit Herstellern wie Mennekes oder PC Electric, bieten wir Ihnen eine vielfältige Auswahl an vorrätigen Steckverbindern und können jederzeit flexibel auf Ihren Bedarf reagieren.
-            Regelmäßige Abnahmen von Großmengen sichern unsere Einkaufspreise und sorgen für ein optimales Preis,- Leistungsverhältnis unserer Produkte.
-        </p>
+        <div class="flex gap-8">
+            <div class="bg-dark text-light p-8">
+                <h4 class="text-3xl">Kabelkonfektion</h4>
+                <p class="my-8">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                </p>
+                <button class="bg-primary text-dark uppercase py-2 px-4 hover:bg-secondary hover:text-light">mehr</button>
+            </div>
+            <div class="bg-dark text-light p-8">
+                <h4 class="text-3xl">Laser</h4>
+                <p class="my-8">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                </p>
+                <button class="bg-primary text-dark uppercase py-2 px-4 hover:bg-secondary hover:text-light">mehr</button>
+            </div>
+            <div class="bg-dark text-light p-8">
+                <h4 class="text-3xl">Großhandel</h4>
+                <p class="my-8">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                </p>
+                <button class="bg-primary text-dark uppercase py-2 px-4 hover:bg-secondary hover:text-light">mehr</button>
+            </div>
+        </div>
     </section>
 </div>
-
 
 <div class="py-10 bg-light w-[100vw]">
     <section class="container py-10 flex gap-6">
@@ -93,27 +103,31 @@
 </div>
 
 
-    <div class="py-10 w-[100vw]">
-        <section class="container py-10 flex gap-6">
-            <div class="basis-3/5 overflow-hidden shadow-md">
-                <img src="http://localhost/maxgo/wp-content/uploads/2023/02/starkstrom-lebensgefahr.jpg"
-                     class="object-cover object-center"
-                     alt="">
-            </div>
+<div class="py-10 w-[100vw]">
+    <section class="container py-10 flex gap-6">
+        <div class="basis-3/5 overflow-hidden shadow-md">
+            <img src="http://localhost/maxgo/wp-content/uploads/2023/02/starkstrom-lebensgefahr.jpg"
+                 class="object-cover object-center"
+                 alt="">
+        </div>
 
-            <div class="basis-2/5 py-5 my-auto">
-                <h3 class="text-3xl uppercase font-dark font-bold">Starkstrom</h3>
-                <p class="py-5 text-xl">
-                    Langlebige und stabile Steckverbinder,
-                    Schnittfeste PUR-Leitung H07BQ-F,
-                    Große Auswahl an Stromverteilern,
-                    Lieferung direkt auf die Baustelle.
-                </p>
-                <button class="bg-dark text-light py-2 px-4 uppercase hover:text-primary hover:bg-secondary shadow-md">mehr</button>
-            </div>
-        </section>
-    </div>
+        <div class="basis-2/5 py-5 my-auto">
+            <h3 class="text-3xl uppercase font-dark font-bold">Starkstrom</h3>
+            <p class="py-5 text-xl">
+                Langlebige und stabile Steckverbinder,
+                Schnittfeste PUR-Leitung H07BQ-F,
+                Große Auswahl an Stromverteilern,
+                Lieferung direkt auf die Baustelle.
+            </p>
+            <button class="bg-dark text-light py-2 px-4 uppercase hover:text-primary hover:bg-secondary shadow-md">mehr</button>
+        </div>
+    </section>
+</div>
 
+<div class="text-dark bg-light mt-10 py-10 flex flex-col justify-center items-center gap-8">
+    <h4 class="text-3xl font-bold uppercase">Neugierig? Rufen Sie uns jetzt an!</h4>
+    <button class="bg-primary text-2xl text-dark font-bold py-3 px-5 uppercase hover:text-light hover:bg-dark shadow-md">Kontakt</button>
+</div>
 
 <?php get_template_part('includes/section', 'content') ?>
 

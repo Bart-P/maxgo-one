@@ -39,7 +39,7 @@
 </div>
 
 <div class="py-10 bg-light w-[100vw]">
-    <section class="container py-10 flex gap-6">
+    <section class="container py-10 flex gap-8">
         <div class="basis-2/5 py-5 my-auto">
             <h3 class="text-3xl uppercase font-dark font-bold">SCHUTZKONTAKT</h3>
             <p class="py-5 text-xl">
@@ -60,7 +60,7 @@
 </div>
 
 <div class="py-10 w-[100vw]">
-    <section class="container py-10 flex gap-6">
+    <section class="container py-10 flex gap-8">
         <div class="basis-3/5 overflow-hidden shadow-md">
             <img src="http://localhost/maxgo/wp-content/uploads/2023/02/camping-grill-draussen.jpg"
                  class="object-cover object-center"
@@ -83,7 +83,7 @@
 
 
 <div class="py-10 bg-light w-[100vw]">
-    <section class="container py-10 flex gap-6">
+    <section class="container py-10 flex gap-8">
         <div class="basis-2/5 py-5 my-auto">
             <h3 class="text-3xl uppercase font-dark font-bold">Solar</h3>
             <p class="py-5 text-xl">
@@ -104,7 +104,7 @@
 
 
 <div class="py-10 w-[100vw]">
-    <section class="container py-10 flex gap-6">
+    <section class="container py-10 flex gap-8">
         <div class="basis-3/5 overflow-hidden shadow-md">
             <img src="http://localhost/maxgo/wp-content/uploads/2023/02/starkstrom-lebensgefahr.jpg"
                  class="object-cover object-center"

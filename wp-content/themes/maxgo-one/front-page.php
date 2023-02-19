@@ -1,6 +1,5 @@
 <?php get_header() ?>
 
-
 <div class="fp-banner h-[70vh] w-[100vw] z-10">
 	<div class="container w-[100%] h-[100%] flex justify-center items-center text-light z-50">
 		<div class="text-center">
@@ -8,8 +7,8 @@
 			<p class="text-2xl">Ein schlauer, super geiler text kommt hier hin. Sollte aber definitiv nicht zu lang sein..</p>
 		</div>
 	</div>
-
 </div>
+
 <div class="container py-10">
     <section class="flex flex-col gap-8 my-10">
         <div class="flex gap-8">

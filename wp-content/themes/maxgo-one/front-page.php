@@ -102,7 +102,6 @@
     </section>
 </div>
 
-
 <div class="py-10 w-[100vw]">
     <section class="container py-10 flex gap-8">
         <div class="basis-3/5 overflow-hidden shadow-md">
@@ -124,7 +123,27 @@
     </section>
 </div>
 
-<div class="text-dark bg-light mt-10 py-10 flex flex-col justify-center items-center gap-8">
+<div class="py-10 bg-light w-[100vw]">
+    <section class="container py-10 flex gap-8">
+        <div class="basis-2/5 py-5 my-auto">
+            <h3 class="text-3xl uppercase font-dark font-bold">Event</h3>
+            <p class="py-5 text-xl">
+                Ein toller Text über Solar.
+                Hier kommt noch irgendwas Schlaues hin,
+                ich weiß halt noch nicht genau was.
+            </p>
+            <button class="bg-dark text-light py-2 px-4 uppercase hover:text-primary hover:bg-secondary shadow-md">mehr</button>
+        </div>
+
+        <div class="basis-3/5 overflow-hidden">
+            <img src="http://localhost/maxgo/wp-content/uploads/2023/02/event-dj-party.jpg"
+                 class="object-cover object-center"
+                 alt="">
+        </div>
+    </section>
+</div>
+
+<div class="text-dark bg-light py-10 flex flex-col justify-center items-center gap-8">
     <h4 class="text-3xl font-bold uppercase">Neugierig? Rufen Sie uns jetzt an!</h4>
     <button class="bg-primary text-2xl text-dark font-bold py-3 px-5 uppercase hover:text-light hover:bg-dark shadow-md">Kontakt</button>
 </div>

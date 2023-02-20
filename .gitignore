@@ -71,4 +71,6 @@ Thumbs.db
 
 # track these themes
 !wp-content/themes/maxgo-one/
+
+# untrack that from themes
 wp-content/themes/maxgo-one/vendor/

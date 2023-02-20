@@ -1,5 +1,32 @@
 <?php
 
+use Carbon_Fields\Carbon_Fields;
+use Carbon_Fields\Container;
+use Carbon_Fields\Field;
+
+add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
+function crb_attach_theme_options(): void {
+	Container::make( 'theme_options', __( 'Theme Options', 'crb' ) )
+	         ->add_fields( array(
+		                       Field::make( 'text', 'crb_text', 'Text Field' ),
+	                       ) );
+
+	Container::make('post_meta', __('Banner', 'crb'))
+	         ->where('post_type', '=', 'page')
+	         ->add_fields(array(
+		                      Field::make('image', 'crb_banner_image', 'Hintergrund Bild'),
+		                      Field::make('text', 'crb_banner_title', 'Überschrift'),
+		                      Field::make('text', 'crb_banner_description', 'Kurzbeschreibung'),
+	                      ));
+}
+
+add_action( 'after_setup_theme', 'crb_load' );
+function crb_load(): void {
+	require_once( 'vendor/autoload.php' );
+	Carbon_Fields::boot();
+}
+
+
 // Load CSS
 function load_css(): void {
 	wp_register_style('tailwind', get_template_directory_uri() . '/style.css');

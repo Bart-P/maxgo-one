@@ -1,0 +1,15 @@
+{
+    "name": "bp/maxgo-one",
+    "description": "maxgo wordpress theme",
+    "type": "project",
+    "authors": [
+        {
+            "name": "bp",
+            "email": "bartek.paraf@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "htmlburger/carbon-fields": "^3.3"
+    }
+}

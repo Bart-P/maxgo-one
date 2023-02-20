@@ -9,8 +9,8 @@
 	</div>
 </div>
 
-<div class="container py-10">
-    <section class="flex flex-col gap-8 my-10">
+<div class="container my-10 py-10">
+    <section class="flex flex-col gap-8">
         <div class="flex gap-8">
             <div class="bg-dark text-light p-8">
                 <h4 class="text-3xl">Kabelkonfektion</h4>

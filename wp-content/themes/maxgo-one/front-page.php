@@ -142,7 +142,7 @@
     </section>
 </div>
 
-<div class="text-dark bg-light py-10 flex flex-col justify-center items-center gap-8">
+<div class="text-dark py-10 flex flex-col justify-center items-center gap-8">
     <h4 class="text-3xl font-bold uppercase">Neugierig? Rufen Sie uns jetzt an!</h4>
     <button class="bg-primary text-2xl text-dark font-bold py-3 px-5 uppercase hover:text-light hover:bg-dark shadow-md">Kontakt</button>
 </div>

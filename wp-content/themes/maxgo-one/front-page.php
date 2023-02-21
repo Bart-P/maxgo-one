@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<div class="fp-banner h-[70vh] w-[100vw] z-10">
+<div class="fp-banner h-[70vh] w-[100vw] z-10" style="background-image: url(<?php echo wp_get_attachment_image_url(carbon_get_post_meta(get_queried_object_id(), 'crb_banner_image'), 'big') ?>)">
 	<div class="container w-[100%] h-[100%] flex justify-center items-center text-light z-50">
 		<div class="text-center">
 			<h1 class="align-end text-5xl font-bold mb-5">Einfach, Sicher Verbinden!</h1>

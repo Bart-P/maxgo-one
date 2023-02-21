@@ -580,8 +580,16 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .block {
@@ -630,6 +638,14 @@ video {
 
 .w-\[100vw\] {
   width: 100vw;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .basis-2\/5 {
@@ -681,6 +697,10 @@ video {
   gap: 2rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -698,6 +718,14 @@ video {
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(245 134 18 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[url\(\'http\:\/\/localhost\/maxgo\/wp-content\/uploads\/2023\/02\/PCE-POWERCON-Verteiler\.jpg\'\)\] {
+  background-image: url('http://localhost/maxgo/wp-content/uploads/2023/02/PCE-POWERCON-Verteiler.jpg');
 }
 
 .object-cover {
@@ -751,6 +779,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -862,7 +895,6 @@ video {
 /* Banner */
 
 .fp-banner {
-  background-image: url("http://localhost/maxgo/wp-content/uploads/2023/02/PCE-POWERCON-Verteiler.jpg");
   background-size: cover;
   background-position: center;
 }

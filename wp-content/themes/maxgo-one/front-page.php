@@ -3,38 +3,49 @@
 <div class="fp-banner h-[70vh] w-[100vw] z-10" style="background-image: url(<?php echo wp_get_attachment_image_url(carbon_get_post_meta(get_queried_object_id(), 'crb_banner_image'), 'big') ?>)">
 	<div class="container w-[100%] h-[100%] flex justify-center items-center text-light z-50">
 		<div class="text-center">
-			<h1 class="align-end text-5xl font-bold mb-5">Einfach, Sicher Verbinden!</h1>
-			<p class="text-2xl">Ein schlauer, super geiler text kommt hier hin. Sollte aber definitiv nicht zu lang sein..</p>
+			<h1 class="align-end uppercase text-5xl font-bold mb-5">
+                <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_banner_title') ?>
+            </h1>
+			<p class="text-2xl">
+                <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_banner_description') ?>
+            </p>
 		</div>
 	</div>
 </div>
 
 <div class="container my-10 py-10">
-    <section class="flex flex-col gap-8">
-        <div class="flex gap-8">
-            <div class="bg-dark text-light p-8">
-                <h4 class="text-3xl">Kabelkonfektion</h4>
-                <p class="my-8">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                </p>
-                <button class="bg-primary text-dark uppercase py-2 px-4 hover:bg-secondary hover:text-light">mehr</button>
+        <div class="flex gap-10 flex-1 w-full">
+            <div class="base-1/3 bg-dark text-light p-8 w-full">
+                <h4 class="text-3xl uppercase">Kabelkonfektion</h4>
+                <ul class="my-10 text-xl">
+                    <li>Wir machen dies</li>
+                    <li>und wir machen das</li>
+                    <li>das hier auch noch</li>
+                    <li>und dies nicht vergessen</li>
+                </ul>
+                <button class="bg-primary text-dark uppercase py-3 px-5 hover:bg-secondary hover:text-light">mehr</button>
             </div>
-            <div class="bg-dark text-light p-8">
-                <h4 class="text-3xl">Laser</h4>
-                <p class="my-8">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                </p>
-                <button class="bg-primary text-dark uppercase py-2 px-4 hover:bg-secondary hover:text-light">mehr</button>
+            <div class="base-1/3 bg-dark text-light p-8 w-full">
+                <h4 class="text-3xl uppercase">Laser</h4>
+                <ul class="my-10 text-xl">
+                    <li>Wir machen dies</li>
+                    <li>und wir machen das</li>
+                    <li>das hier auch noch</li>
+                    <li>und dies nicht vergessen</li>
+                </ul>
+                <button class="bg-primary text-dark uppercase py-3 px-5 hover:bg-secondary hover:text-light">mehr</button>
             </div>
-            <div class="bg-dark text-light p-8">
-                <h4 class="text-3xl">Großhandel</h4>
-                <p class="my-8">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                </p>
-                <button class="bg-primary text-dark uppercase py-2 px-4 hover:bg-secondary hover:text-light">mehr</button>
+            <div class="base-1/3 bg-dark text-light p-8 w-full">
+                <h4 class="text-3xl uppercase">Großhandel</h4>
+                <ul class="my-10 text-xl">
+                    <li>Wir machen dies</li>
+                    <li>und wir machen das</li>
+                    <li>das hier auch noch</li>
+                    <li>und dies nicht vergessen</li>
+                </ul>
+                <button class="bg-primary text-dark uppercase py-3 px-5 hover:bg-secondary hover:text-light">mehr</button>
             </div>
         </div>
-    </section>
 </div>
 
 <div class="py-10 bg-light w-[100vw]">

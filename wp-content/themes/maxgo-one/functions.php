@@ -11,6 +11,14 @@ function crb_attach_theme_options(): void {
 		                       Field::make( 'text', 'crb_text', 'Text Field' ),
 	                       ) );
 
+	Container::make('post_meta', __('Kurzbeschreibung', 'crb'))
+	         ->where('post_type', '=', 'page')
+	         ->add_fields(array(
+		                      Field::make('text', 'crb_short_title', 'Überschrift'),
+		                      Field::make('textarea', 'crb_short_description', 'Kurzbeschreibung')
+		                           ->set_rows(4),
+	                      ));
+
 	Container::make('post_meta', __('Banner', 'crb'))
 	         ->where('post_type', '=', 'page')
 	         ->add_fields(array(

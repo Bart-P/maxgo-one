@@ -3,38 +3,23 @@
 <?php get_template_part('includes/section', 'banner') ?>
 
 <div class="container my-10 py-10">
-        <div class="flex gap-10 flex-1 w-full">
-            <div class="base-1/3 bg-dark text-light p-8 w-full">
-                <h4 class="text-3xl uppercase">Kabelkonfektion</h4>
-                <ul class="my-10 text-xl">
-                    <li>Wir machen dies</li>
-                    <li>und wir machen das</li>
-                    <li>das hier auch noch</li>
-                    <li>und dies nicht vergessen</li>
-                </ul>
-                <button class="bg-primary text-dark uppercase py-3 px-5 hover:bg-secondary hover:text-light">mehr</button>
+    <div class="flex gap-10 w-full">
+        <?php foreach (get_all_page_ids() as $page_id): ?>
+            <?php if(carbon_get_post_meta($page_id, 'crb_short_title')):?>
+            <div class="flex flex-col justify-between base-1/3 bg-dark text-light p-8 w-full">
+                <section>
+                    <h4 class="text-3xl uppercase"><?php echo carbon_get_post_meta($page_id, 'crb_short_title') ?></h4>
+                    <p class="my-10 text-xl">
+                        <?php echo carbon_get_post_meta($page_id, 'crb_short_description') ?>
+                    </p>
+                </section>
+                <div>
+                    <a href="<?php echo get_page_link($page_id) ?>" class="bg-primary text-dark uppercase py-3 px-5 hover:bg-secondary hover:text-light">mehr</a>
+                </div>
             </div>
-            <div class="base-1/3 bg-dark text-light p-8 w-full">
-                <h4 class="text-3xl uppercase">Laser</h4>
-                <ul class="my-10 text-xl">
-                    <li>Wir machen dies</li>
-                    <li>und wir machen das</li>
-                    <li>das hier auch noch</li>
-                    <li>und dies nicht vergessen</li>
-                </ul>
-                <button class="bg-primary text-dark uppercase py-3 px-5 hover:bg-secondary hover:text-light">mehr</button>
-            </div>
-            <div class="base-1/3 bg-dark text-light p-8 w-full">
-                <h4 class="text-3xl uppercase">Großhandel</h4>
-                <ul class="my-10 text-xl">
-                    <li>Wir machen dies</li>
-                    <li>und wir machen das</li>
-                    <li>das hier auch noch</li>
-                    <li>und dies nicht vergessen</li>
-                </ul>
-                <button class="bg-primary text-dark uppercase py-3 px-5 hover:bg-secondary hover:text-light">mehr</button>
-            </div>
-        </div>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </div>
 </div>
 
 <div class="py-10 bg-light w-[100vw]">

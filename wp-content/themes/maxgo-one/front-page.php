@@ -6,7 +6,7 @@
     <?php
         $card_page_ids_to_show = [];
         foreach (get_all_page_ids() as $id) {
-            if(carbon_get_post_meta($id, 'crb_show_on_frontpage')) {
+            if(carbon_get_post_meta($id, 'crb_show_in_card_on_frontpage')) {
                 $card_page_ids_to_show[] = $id;
             }
         }
@@ -17,19 +17,17 @@
     <div class="flex gap-10 w-full">
     <?php endif; ?>
     <?php foreach ($card_page_ids_to_show as $index=>$page_id): ?>
-        <?php if(carbon_get_post_meta($page_id, 'crb_show_on_frontpage')):?>
-            <div class="flex flex-col justify-between base-1/3 bg-dark text-light p-8 w-full">
-                <section>
-                    <h4 class="text-3xl uppercase"><?php echo carbon_get_post_meta($page_id, 'crb_short_title') ?></h4>
-                    <p class="my-10 text-xl">
-                        <?php echo carbon_get_post_meta($page_id, 'crb_short_description') ?>
-                    </p>
-                </section>
-                <div>
-                    <a href="<?php echo get_page_link($page_id) ?>" class="bg-primary text-dark uppercase py-3 px-5 hover:bg-secondary hover:text-light">mehr</a>
-                </div>
+        <div class="flex flex-col justify-between base-1/3 bg-dark text-light p-8 w-full">
+            <section>
+                <h4 class="text-3xl uppercase"><?php echo carbon_get_post_meta($page_id, 'crb_short_title') ?></h4>
+                <p class="my-10 text-xl">
+                    <?php echo carbon_get_post_meta($page_id, 'crb_short_description') ?>
+                </p>
+            </section>
+            <div>
+                <a href="<?php echo get_page_link($page_id) ?>" class="bg-primary text-dark uppercase py-3 px-5 hover:bg-secondary hover:text-light">mehr</a>
             </div>
-        <?php endif; ?>
+        </div>
     <?php endforeach; ?>
     </div>
 

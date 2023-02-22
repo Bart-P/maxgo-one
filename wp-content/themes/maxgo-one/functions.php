@@ -11,11 +11,10 @@ function crb_attach_theme_options(): void {
 		                       Field::make( 'text', 'crb_text', 'Text Field' ),
 	                       ) );
 
-	//TODO add field in Card with a checkbox to show on Front Page - maybe as simple Card or big section Card..
-
 	Container::make('post_meta', __('Kurzbeschreibung', 'crb'))
 	         ->where('post_type', '=', 'page')
 	         ->add_fields(array(
+				              Field::make('checkbox', 'crb_show_on_frontpage', 'Auf Startseite anzeigen'),
 		                      Field::make('text', 'crb_short_title', 'Überschrift'),
 		                      Field::make('textarea', 'crb_short_description', 'Text')
 		                           ->set_rows(4),

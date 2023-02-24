@@ -557,6 +557,18 @@ video {
   z-index: 50;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -611,6 +623,14 @@ video {
   height: 70vh;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .max-h-\[35px\] {
   max-height: 35px;
 }
@@ -646,6 +666,18 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -684,6 +716,15 @@ video {
   overflow: hidden;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
+.border-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(1 22 56 / var(--tw-border-opacity));
+}
+
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(1 22 56 / var(--tw-bg-opacity));
@@ -697,6 +738,11 @@ video {
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(245 134 18 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(84 66 142 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -827,6 +873,10 @@ video {
 
 #menu-top-navigation li .sub-menu {
   display: none;
+}
+
+#menu-top-navigation .menu-item-has-children {
+  cursor: pointer;
 }
 
 #menu-top-navigation .menu-item-has-children:hover .sub-menu {

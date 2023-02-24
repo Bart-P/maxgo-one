@@ -18,6 +18,10 @@
     @apply hidden;
 }
 
+#menu-top-navigation .menu-item-has-children {
+    @apply cursor-pointer
+}
+
 #menu-top-navigation .menu-item-has-children:hover .sub-menu {
     @apply flex flex-col gap-2 p-4 absolute bg-light self-baseline translate-y-[35px] shadow-2xl;
 }

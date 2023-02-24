@@ -29,6 +29,20 @@ function crb_attach_theme_options(): void {
 		                      Field::make('text', 'crb_banner_title', 'Überschrift'),
 		                      Field::make('text', 'crb_banner_description', 'Text'),
 	                      ));
+
+	Container::make('post_meta', __('Produkt mit 5 bullets', 'crb'))
+	         ->where('post_type', '=', 'page')
+	         ->add_fields(array(
+		                      Field::make('checkbox', 'crb_product_show', 'Auf Seite Anzeigen'),
+		                      Field::make('image', 'crb_product_image', 'Hintergrund Bild'),
+		                      Field::make('text', 'crb_product_title', 'Überschrift'),
+		                      Field::make('text', 'crb_product_description', 'Kurzbeschreibung'),
+		                      Field::make('text', 'crb_product_bullet1', 'Bullet 1'),
+		                      Field::make('text', 'crb_product_bullet2', 'Bullet 2'),
+		                      Field::make('text', 'crb_product_bullet3', 'Bullet 3'),
+		                      Field::make('text', 'crb_product_bullet4', 'Bullet 4'),
+		                      Field::make('text', 'crb_product_bullet5', 'Bullet 5'),
+	                      ));
 }
 
 add_action( 'after_setup_theme', 'crb_load' );

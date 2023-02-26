@@ -13,6 +13,7 @@ function crb_attach_theme_options(): void {
 
 	Container::make('post_meta', __('Kurzbeschreibung', 'crb'))
 	         ->where('post_type', '=', 'page')
+			 ->or_where('post_type', '=', 'products')
 	         ->add_fields(array(
 				              Field::make('checkbox', 'crb_show_in_card_on_frontpage', 'Auf Startseite als Karte anzeigen (ohne Bild)'),
 				              Field::make('checkbox', 'crb_show_in_section_on_frontpage', 'Auf Startseite als Sektion anzeigen (mit Bild)'),
@@ -24,6 +25,7 @@ function crb_attach_theme_options(): void {
 
 	Container::make('post_meta', __('Banner', 'crb'))
 	         ->where('post_type', '=', 'page')
+			 ->or_where('post_type', '=', 'products')
 	         ->add_fields(array(
 		                      Field::make('image', 'crb_banner_image', 'Hintergrund Bild'),
 		                      Field::make('text', 'crb_banner_title', 'Überschrift'),
@@ -32,6 +34,7 @@ function crb_attach_theme_options(): void {
 
 	Container::make('post_meta', __('Produkt mit 5 bullets', 'crb'))
 	         ->where('post_type', '=', 'page')
+			 ->or_where('post_type', '=', 'products')
 	         ->add_fields(array(
 		                      Field::make('checkbox', 'crb_product_show', 'Auf Seite Anzeigen'),
 		                      Field::make('image', 'crb_product_image', 'Hintergrund Bild'),

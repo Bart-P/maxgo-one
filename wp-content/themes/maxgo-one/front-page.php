@@ -15,7 +15,21 @@
                 $section_page_ids_to_show[] = $id;
             }
         };
+
+        $products = get_posts(
+            [
+                'post_type' => 'products',
+            ]);
+
+        foreach ($products as $product) {
+            if (carbon_get_post_meta($product->ID, 'crb_show_in_section_on_frontpage'))
+            {
+                $section_page_ids_to_show[] = $product->ID;
+            }
+        }
+
     ?>
+
     <?php if (count($card_page_ids_to_show) > 3): ?>
     <div class="grid grid-cols-3 gap-10 w-full">
     <?php else: ?>
@@ -83,7 +97,5 @@
     <h4 class="text-3xl font-bold uppercase">Neugierig? Jetzt Kontaktieren!</h4>
     <button class="bg-primary text-2xl text-dark font-bold py-3 px-5 uppercase hover:text-light hover:bg-dark shadow-md">Kontakt</button>
 </div>
-
-<?php get_template_part('includes/section', 'content') ?>
 
 <?php get_footer() ?>

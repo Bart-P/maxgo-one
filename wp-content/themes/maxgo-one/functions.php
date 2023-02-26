@@ -87,3 +87,34 @@ register_nav_menus(
 		'footer-navigation' => 'Footer Menu Location',
 	)
 );
+
+// Post Types
+function product_post_type(): void {
+	$args = array(
+		'public' => true,
+		'labels' => array(
+			'name' => 'Produkte',
+			'singular_name' => 'Produkt'
+		),
+		'supports' => array('title', 'editor', 'page-attributes'),
+		'hierarchical' => true,
+	);
+
+	register_post_type('products', $args);
+}
+add_action('init', 'product_post_type');
+
+function service_post_type(): void {
+	$args = array(
+		'public' => true,
+		'has_archive' => false,
+		'labels' => array(
+			'name' => 'Leistungen',
+			'singular_name' => 'Leistung'
+			),
+		'hierarchical' => true,
+	);
+
+	register_post_type('services', $args);
+}
+add_action('init', 'service_post_type');

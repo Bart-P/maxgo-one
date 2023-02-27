@@ -40,11 +40,11 @@ function crb_attach_theme_options(): void {
 		                      Field::make('image', 'crb_product_image', 'Hintergrund Bild'),
 		                      Field::make('text', 'crb_product_title', 'Überschrift'),
 		                      Field::make('text', 'crb_product_description', 'Kurzbeschreibung'),
-		                      Field::make('text', 'crb_product_bullet1', 'Bullet 1'),
-		                      Field::make('text', 'crb_product_bullet2', 'Bullet 2'),
-		                      Field::make('text', 'crb_product_bullet3', 'Bullet 3'),
-		                      Field::make('text', 'crb_product_bullet4', 'Bullet 4'),
-		                      Field::make('text', 'crb_product_bullet5', 'Bullet 5'),
+		                      Field::make('text', 'crb_product_bullet1', 'Bullet Qualität'),
+		                      Field::make('text', 'crb_product_bullet2', 'Bullet Sicherheit'),
+		                      Field::make('text', 'crb_product_bullet3', 'Bullet Langlebigkeit'),
+		                      Field::make('text', 'crb_product_bullet4', 'Bullet Stecker'),
+		                      Field::make('text', 'crb_product_bullet5', 'Bullet Kabel'),
 	                      ));
 }
 

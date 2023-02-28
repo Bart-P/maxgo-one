@@ -16,20 +16,45 @@
                          alt="">
 
                 </div>
-                <div class="text-center my-auto col-start-1 col-span-2">
-                    <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet1') ?>
+                <div class="text-center my-auto col-start-1 col-span-2 space-y-5">
+                    <div class="text-primary">
+                        <i class="fa-solid fa-plug-circle-bolt text-3xl"></i>
+                    </div>
+                    <p class="px-10">
+                        <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet1') ?>
+                    </p>
                 </div>
-                <div class="text-center my-auto col-span-2">
-                    <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet3') ?>
+                <div class="text-center my-auto col-span-2 space-y-5">
+                    <div class="text-primary">
+                        <i class="fa-solid fa-plug-circle-bolt text-3xl"></i>
+                    </div>
+                    <p class="px-10">
+                        <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet3') ?>
+                    </p>
                 </div>
-                <div class="text-center my-auto col-start-1 col-span-2">
-                    <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet2') ?>
+                <div class="text-center my-auto col-span-2 space-y-5">
+                    <div class="text-primary">
+                        <i class="fa-solid fa-plug-circle-bolt text-3xl"></i>
+                    </div>
+                    <p class="px-10">
+                        <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet2') ?>
+                    </p>
                 </div>
-                <div class="text-center my-auto col-span-2">
-                    <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet4') ?>
+                <div class="text-center my-auto col-span-2 space-y-5">
+                    <div class="text-primary">
+                        <i class="fa-solid fa-plug-circle-bolt text-3xl"></i>
+                    </div>
+                    <p class="px-10">
+                        <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet4') ?>
+                    </p>
                 </div>
-                <div class="text-center my-auto col-start-3 col-span-3 text-center">
-                    <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet5') ?>
+                <div class="text-center my-auto col-start-3 col-span-3 text-center space-y-5">
+                    <div class="text-primary">
+                        <i class="fa-solid fa-plug-circle-bolt text-3xl"></i>
+                    </div>
+                    <p class="px-10">
+                        <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet5') ?>
+                    </p>
                 </div>
             </div>
 		</div>

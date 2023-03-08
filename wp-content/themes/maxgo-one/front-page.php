@@ -36,7 +36,7 @@
     <div class="flex gap-10 w-full">
     <?php endif; ?>
     <?php foreach ($card_page_ids_to_show as $index=>$page_id): ?>
-        <div class="flex flex-col justify-between base-1/3 bg-dark text-light p-8 w-full">
+        <div class="flex flex-col rounded-md justify-between base-1/3 bg-dark text-light p-8 w-full">
             <section>
                 <h4 class="text-3xl uppercase"><?php echo carbon_get_post_meta($page_id, 'crb_short_title') ?></h4>
                 <p class="my-10 text-xl">
@@ -44,7 +44,7 @@
                 </p>
             </section>
             <div>
-                <a href="<?php echo get_page_link($page_id) ?>" class="bg-primary text-dark uppercase py-3 px-5 hover:bg-secondary hover:text-light">mehr</a>
+                <a href="<?php echo get_page_link($page_id) ?>" class="btn btn-primary">mehr</a>
             </div>
         </div>
     <?php endforeach; ?>
@@ -61,12 +61,12 @@
                 <p class="py-10 text-xl">
                     <?php echo carbon_get_post_meta($section_page_id, 'crb_short_description'); ?>
                 </p>
-                <a href="<?php echo get_page_link($section_page_id); ?>" class="bg-dark text-light text-xl py-3 px-5 uppercase hover:text-primary hover:bg-secondary shadow-md">mehr</a>
+                <a href="<?php echo get_page_link($section_page_id); ?>" class="btn btn-dark">mehr</a>
             </div>
 
             <div class="container basis-3/5 overflow-hidden">
                 <img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($section_page_id, 'crb_short_image'), 'big') ?>"
-                     class="object-cover object-center"
+                     class="rounded-md object-cover object-center"
                      alt="">
             </div>
         </section>
@@ -76,7 +76,7 @@
             <section class="container py-10 flex gap-10">
                 <div class="container basis-3/5 overflow-hidden">
                     <img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($section_page_id, 'crb_short_image'), 'big') ?>"
-                         class="object-cover object-center"
+                         class="rounded-md object-cover object-center"
                          alt="">
                 </div>
 
@@ -85,7 +85,7 @@
                     <p class="py-10 text-xl">
                         <?php echo carbon_get_post_meta($section_page_id, 'crb_short_description') ?>
                     </p>
-                    <a href="<?php echo get_page_link($section_page_id); ?>" class="bg-dark text-light text-xl py-3 px-5 uppercase hover:text-primary hover:bg-secondary shadow-md">mehr</a>
+                    <a href="<?php echo get_page_link($section_page_id); ?>" class="btn btn-dark">mehr</a>
                 </div>
             </section>
         </div>
@@ -93,9 +93,11 @@
 <?php endforeach; ?>
 
 
-<div class="text-dark py-10 my-10 flex flex-col justify-center items-center gap-10">
-    <h4 class="text-3xl font-bold uppercase">Neugierig? Jetzt Kontaktieren!</h4>
-    <button class="bg-primary text-2xl text-dark font-bold py-3 px-5 uppercase hover:text-light hover:bg-dark shadow-md">Kontakt</button>
+<div class="bg-secondary text-light py-10">
+    <div class="py-10 flex flex-col justify-center items-center gap-10">
+        <h4 class="text-3xl font-bold uppercase">Fragen? Rufen Sie uns an!</h4>
+        <button class="btn btn-primary font-bold text-2xl">Kontakt</button>
+    </div>
 </div>
 
 <?php get_footer() ?>

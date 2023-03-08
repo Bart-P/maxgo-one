@@ -14,7 +14,6 @@
                     <img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta(get_queried_object_id(), 'crb_product_image'), 'big') ?>"
                          class="object-center object-cover"
                          alt="">
-
                 </div>
                 <div class="text-center my-auto col-start-1 col-span-2 space-y-5">
                     <div class="text-primary">

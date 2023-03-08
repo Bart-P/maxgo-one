@@ -39,7 +39,7 @@
                 )
             );
             ?>
-            <a href="" class="py-2 px-3 bg-dark text-light font-bold uppercase my-auto shadow-md hover:text-primary hover:bg-secondary">Online Shop</a>
+            <a href="" class="btn btn-dark">Online Shop</a>
         </div>
     </nav>
 </div>

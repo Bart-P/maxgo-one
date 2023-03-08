@@ -40,3 +40,21 @@
     background-size: cover;
     background-position: center;
 }
+
+/* Buttons */
+
+.btn {
+    @apply py-3 px-4 uppercase my-auto shadow-md rounded-md;
+}
+
+.btn-primary {
+    @apply bg-primary text-dark hover:text-primary hover:bg-secondary;
+}
+
+.btn-dark {
+    @apply bg-dark text-light hover:text-primary hover:bg-secondary;
+}
+
+.btn-secondary {
+
+}

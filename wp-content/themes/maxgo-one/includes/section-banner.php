@@ -5,9 +5,10 @@
 			<h1 class="align-end uppercase text-5xl font-bold mb-5">
 				<?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_banner_title') ?>
 			</h1>
-			<p class="text-2xl">
+			<p class="text-2xl mb-10 pb-10">
 				<?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_banner_description') ?>
 			</p>
+            <a href="" class="btn btn-primary btn-big">Kontakt Aufnehmen</a>
 		</div>
 	</div>
 </div>

@@ -47,6 +47,10 @@
     @apply py-3 px-4 uppercase my-auto shadow-md rounded-md;
 }
 
+.btn-big {
+    @apply text-2xl py-4 px-5 font-bold;
+}
+
 .btn-primary {
     @apply bg-primary text-dark hover:text-primary hover:bg-secondary;
 }

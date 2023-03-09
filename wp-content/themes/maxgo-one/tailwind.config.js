@@ -7,6 +7,7 @@ module.exports = {
       gray: '#5B5B66',
       light: '#F4F4F6',
       dark: '#011638',
+      white: '#FFFFFF',
     },
     container: {
       center: true,

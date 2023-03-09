@@ -25,7 +25,7 @@
                 </div>
                 <div class="text-center my-auto col-span-2 space-y-5">
                     <div class="text-primary">
-                        <i class="fa-solid fa-plug-circle-bolt text-3xl"></i>
+                        <i class="fa-solid fa-shield-halved text-3xl"></i>
                     </div>
                     <p class="px-10">
                         <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet3') ?>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="text-center my-auto col-span-2 space-y-5">
                     <div class="text-primary">
-                        <i class="fa-solid fa-plug-circle-bolt text-3xl"></i>
+                        <i class="fa-solid fa-person-digging text-3xl"></i>
                     </div>
                     <p class="px-10">
                         <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet2') ?>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="text-center my-auto col-span-2 space-y-5">
                     <div class="text-primary">
-                        <i class="fa-solid fa-plug-circle-bolt text-3xl"></i>
+                        <i class="fa-solid fa-ruler text-3xl"></i>
                     </div>
                     <p class="px-10">
                         <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet4') ?>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="text-center my-auto col-start-3 col-span-3 text-center space-y-5">
                     <div class="text-primary">
-                        <i class="fa-solid fa-plug-circle-bolt text-3xl"></i>
+                        <i class="fa-solid fa-hammer text-3xl"></i>
                     </div>
                     <p class="px-10">
                         <?php echo carbon_get_post_meta(get_queried_object_id(), 'crb_product_bullet5') ?>

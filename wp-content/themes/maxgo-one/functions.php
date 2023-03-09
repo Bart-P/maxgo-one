@@ -46,6 +46,15 @@ function crb_attach_theme_options(): void {
 		                      Field::make('text', 'crb_product_bullet4', 'Bullet Stecker'),
 		                      Field::make('text', 'crb_product_bullet5', 'Bullet Kabel'),
 	                      ));
+
+	Container::make('post_meta', __('Technische Datails', 'crb'))
+	         ->where('post_type', '=', 'products')
+	         ->add_fields(array(
+				 Field::make('complex', 'crb_tech_details', 'Teschniche Daten')
+						->add_fields(array(
+							 Field::make('text', 'crb_tech_title', 'Titel'),
+							 Field::make('text', 'crb_tech_description', 'Text'),
+						 ))));
 }
 
 add_action( 'after_setup_theme', 'crb_load' );

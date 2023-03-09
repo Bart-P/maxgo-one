@@ -42,9 +42,9 @@ function crb_attach_theme_options(): void {
 		                      Field::make('text', 'crb_product_description', 'Kurzbeschreibung'),
 		                      Field::make('text', 'crb_product_bullet1', 'Bullet Qualität'),
 		                      Field::make('text', 'crb_product_bullet2', 'Bullet Sicherheit'),
-		                      Field::make('text', 'crb_product_bullet3', 'Bullet Langlebigkeit'),
-		                      Field::make('text', 'crb_product_bullet4', 'Bullet Stecker'),
-		                      Field::make('text', 'crb_product_bullet5', 'Bullet Kabel'),
+		                      Field::make('text', 'crb_product_bullet3', 'Bullet Baustelle'),
+		                      Field::make('text', 'crb_product_bullet4', 'Bullet Flexibel'),
+		                      Field::make('text', 'crb_product_bullet5', 'Bullet Robust'),
 	                      ));
 
 	Container::make('post_meta', __('Technische Datails', 'crb'))
@@ -52,7 +52,7 @@ function crb_attach_theme_options(): void {
 	         ->add_fields(array(
 				 Field::make('complex', 'crb_tech_details', 'Teschniche Daten')
 						->add_fields(array(
-							 Field::make('text', 'crb_tech_title', 'Titel'),
+							 Field::make('text', 'crb_tech_title', 'Bezeichnung'),
 							 Field::make('text', 'crb_tech_description', 'Text'),
 						 ))));
 }

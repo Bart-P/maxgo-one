@@ -8,6 +8,12 @@
     font-family: sans, sans-serif;
 }
 
+/* main content */
+
+.page-content p {
+    @apply my-5 text-xl leading-loose;
+}
+
 /* Top Navigation Styles */
 
 #menu-top-navigation .menu-item {

@@ -49,7 +49,6 @@
         </div>
     <?php endforeach; ?>
     </div>
-
 </div>
 
 <?php foreach ($section_page_ids_to_show as $index => $section_page_id): ?>
@@ -57,7 +56,9 @@
     <div class="py-10 bg-light w-[100vw]">
         <section class="container py-10 flex gap-10">
             <div class="basis-2/5 py-5 my-auto">
-                <h3 class="text-3xl uppercase font-dark font-bold"><?php echo carbon_get_post_meta($section_page_id, 'crb_short_title'); ?></h3>
+                <h3 class="text-3xl uppercase font-dark font-bold">
+                    <?php echo carbon_get_post_meta($section_page_id, 'crb_short_title'); ?>
+                </h3>
                 <p class="py-10 text-xl">
                     <?php echo carbon_get_post_meta($section_page_id, 'crb_short_description'); ?>
                 </p>

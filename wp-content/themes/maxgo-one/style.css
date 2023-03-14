@@ -717,6 +717,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -798,16 +802,16 @@ video {
      object-position: center;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .px-10 {
@@ -890,10 +894,6 @@ video {
 
 .lowercase {
   text-transform: lowercase;
-}
-
-.leading-loose {
-  line-height: 2;
 }
 
 .text-dark {

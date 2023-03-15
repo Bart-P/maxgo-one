@@ -14,6 +14,7 @@ function crb_attach_theme_options(): void {
 	Container::make('post_meta', __('Kurzbeschreibung', 'crb'))
 	         ->where('post_type', '=', 'page')
 			 ->or_where('post_type', '=', 'products')
+			 ->or_where('post_type', '=', 'services')
 	         ->add_fields(array(
 				              Field::make('checkbox', 'crb_show_in_card_on_frontpage', 'Auf Startseite als Karte anzeigen (ohne Bild)'),
 				              Field::make('checkbox', 'crb_show_in_section_on_frontpage', 'Auf Startseite als Sektion anzeigen (mit Bild)'),

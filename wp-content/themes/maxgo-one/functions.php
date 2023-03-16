@@ -56,6 +56,19 @@ function crb_attach_theme_options(): void {
 							 Field::make('text', 'crb_tech_title', 'Bezeichnung'),
 							 Field::make('text', 'crb_tech_description', 'Text'),
 						 ))));
+
+	Container::make('post_meta', __('4 Bullets mit Header und Kurzbeschreibung', 'crb'))
+		->where('post_type', '=', 'services')
+		->add_fields(array(
+				Field::make('text', 'crb_service_title', 'Überschrift'),
+				Field::make('text', 'crb_service_short', 'Kurzbeschreibung'),
+				Field::make('complex', 'crb_service_bullets')
+					->add_fields(array(
+						Field::make('text', 'crb_service_bullet_image'),
+						Field::make('text', 'crb_service_bullet_header'),
+						Field::make('text', 'crb_service_bullet_desc'),
+								 )),
+						 ));
 }
 
 add_action( 'after_setup_theme', 'crb_load' );

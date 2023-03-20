@@ -1,8 +1,7 @@
 <?php get_header() ?>
 
 <?php get_template_part('includes/section', 'banner') ?>
-<?php get_template_part('includes/section', 'product') ?>
-
+<?php get_template_part('includes/section', 'service') ?>
 
 	<div class="my-10 py-10 flex justify-between gap-8 container">
         <div class="page-content">

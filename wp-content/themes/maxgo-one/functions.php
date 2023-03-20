@@ -57,14 +57,14 @@ function crb_attach_theme_options(): void {
 							 Field::make('text', 'crb_tech_description', 'Text'),
 						 ))));
 
-	Container::make('post_meta', __('4 Bullets mit Header und Kurzbeschreibung', 'crb'))
+	Container::make('post_meta', __('Leistungsheader mit Bullets', 'crb'))
 		->where('post_type', '=', 'services')
 		->add_fields(array(
 				Field::make('text', 'crb_service_title', 'Überschrift'),
 				Field::make('text', 'crb_service_short', 'Kurzbeschreibung'),
 				Field::make('complex', 'crb_service_bullets')
 					->add_fields(array(
-						Field::make('text', 'crb_service_bullet_image'),
+						Field::make('image', 'crb_service_bullet_image'),
 						Field::make('text', 'crb_service_bullet_header'),
 						Field::make('text', 'crb_service_bullet_desc'),
 								 )),
@@ -76,7 +76,6 @@ function crb_load(): void {
 	require_once( 'vendor/autoload.php' );
 	Carbon_Fields::boot();
 }
-
 
 // Load CSS
 function load_css(): void {

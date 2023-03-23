@@ -849,12 +849,12 @@ video {
   padding: 1.25rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-10 {
@@ -1037,12 +1037,6 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
   line-height: 2;
-}
-
-.content-box {
-  border-radius: 0.375rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 244 246 / var(--tw-bg-opacity));
 }
 
 /* Banner */

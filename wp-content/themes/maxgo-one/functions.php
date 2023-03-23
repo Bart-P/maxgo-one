@@ -64,9 +64,8 @@ function crb_attach_theme_options(): void {
 				Field::make('text', 'crb_service_short', 'Kurzbeschreibung'),
 				Field::make('complex', 'crb_service_bullets')
 					->add_fields(array(
-						Field::make('image', 'crb_service_bullet_image'),
 						Field::make('text', 'crb_service_bullet_header'),
-						Field::make('text', 'crb_service_bullet_desc'),
+						Field::make('text', 'crb_service_bullet_description'),
 								 )),
 						 ));
 }

@@ -66,6 +66,7 @@ function crb_attach_theme_options(): void {
 					->set_max(4)
 					->set_min(4)
 					->add_fields(array(
+						Field::make('text', 'crb_service_bullet_icon_unicode'),
 						Field::make('text', 'crb_service_bullet_header'),
 						Field::make('text', 'crb_service_bullet_description'),
 								 )),

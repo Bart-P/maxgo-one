@@ -26,7 +26,6 @@ function crb_attach_theme_options(): void {
 
 	Container::make('post_meta', __('Banner', 'crb'))
 	         ->where('post_type', '=', 'page')
-			 ->or_where('post_type', '=', 'services')
 	         ->add_fields(array(
 		                      Field::make('image', 'crb_banner_image', 'Hintergrund Bild'),
 		                      Field::make('text', 'crb_banner_title', 'Überschrift'),

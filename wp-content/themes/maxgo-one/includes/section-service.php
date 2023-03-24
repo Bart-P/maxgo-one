@@ -11,15 +11,7 @@
 
 		<div class="flex flex-col gap-3 justify-center items-center text-center bg-light rounded-md shadow-md p-4">
             <div class="bg-primary rounded-full">
-                <?php if ($index === 0): ?>
-                <i class="fa-solid fa-robot text-white p-2 text-xl"></i>
-                <?php elseif ($index === 1): ?>
-                <i class="fa-solid fa-warehouse text-white p-2 text-xl"></i>
-                <?php elseif ($index === 2): ?>
-                <i class="fa-solid fa-gauge-high text-white p-2 text-xl"></i>
-                <?php elseif ($index === 3): ?>
-                <i class="fa-solid fa-ruler-combined text-white p-2 text-xl"></i>
-                <?php endif; ?>
+                <i class="fa-solid text-white p-2 text-xl">&#x<?php echo $bullet['crb_service_bullet_icon_unicode'] ?>;</i>
             </div>
             <h3 class="text-xl font-bold"><?php echo $bullet['crb_service_bullet_header'] ?></h3>
             <p><?php echo $bullet['crb_service_bullet_description'] ?></p>

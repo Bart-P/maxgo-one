@@ -1,4 +1,3 @@
-
 <div class="bg-secondary text-light py-10">
     <div class="py-10 flex flex-col justify-center items-center gap-10">
         <h4 class="text-3xl font-bold uppercase">Fragen? Rufen Sie uns an!</h4>
@@ -49,4 +48,5 @@
 </footer>
 <?php wp_footer() ?>
 </body>
+
 </html>
